@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Elements with class selector</title>
+	<style>
+		/* All with class="highlight" */
+		.highlight{
+			background-color: green;
+		}
+		/* All p elements with highlight class */
+		p.highlight{
+			font-style: italic;
+		}
+		/* All elements with class highlight and mainpoint */
+		.highlight.mainpoint{
+			color: red;
+			background-color: black;
+		}
+		h1.highlight{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="highlight">Elements with Class Selector</h1>
+	<p>The first one is with element with class selector. As you can see here we have a P element followed immediately without any spaces by a dot big which is a A class selector. And what this expresses is that I want to target every p element that has an attribute class equal to big.</p>
+	<p class="highlight">This is p with class highlight. </p>
+	<div class="mainpoint highlight">This is the mainpoint of the entire article.</div>
+</body>
+</html>
