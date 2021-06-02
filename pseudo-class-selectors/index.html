@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pseudo-Class Selectors</title>
+	<style>
+		h1{
+			text-align: center;
+			color: purple;
+			font-style: italic;
+			background-color: yellow;
+			
+		}
+		header li{
+			list-style: none;
+		}
+		a:link, a:visited {
+			text-decoration: none;
+			background-color: green;
+			border: 1px solid blue;
+			color: black;
+			display: block;
+			width: 200px;
+			text-align: center;
+			margin-bottom: 1px;
+		}
+
+		a:hover, a:active{
+			background-color: yellow;
+			color: red;
+		}
+		header li:nth-child(2){
+			font-size: 24px;
+		}
+		section div:nth-child(odd){
+			background-color: grey;
+			width: 100px;
+		}
+		section div:nth-child(even){
+			background-color: black;
+			color: white;
+			width: 100px;
+		}
+		section div:hover{
+			background-color: yellow;
+			color: red;
+			cursor: pointer;
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Pseudo-Class Selector</h1>
+	<header>
+		<ul>
+			<li><a href="/" target="_blank" title="Home">Home</a></li>
+			<li><a href="https://www.instagram.com/virtualrctournaments/" target="_blank" title="insta">My insta handle</a></li>
+			<li><a href="https://www.instagram.com/p/CPFHHU3lLs4/" target="_blank" title="post">My recent post</a></li>
+		</ul>
+	</header>
+
+	<section>
+		<div>DIV 1</div>
+		<div>DIV 2</div>
+		<div>DIV 3</div>
+		<div>DIV 4</div>
+		<div>DIV 5</div>
+		<div>DIV 6</div>
+		<div>DIV 7</div>
+		<div>DIV 8</div>
+		<div>DIV 9</div>
+		<div>DIV 10</div>
+		<div>DIV 11</div>
+		<div>DIV 12</div>
+		<div>DIV 13</div>
+		<div>DIV 14</div>
+		<div>DIV 15</div>
+		<div>DIV 16</div>
+		<div>DIV 17</div>
+		<div>DIV 18</div>
+		<div>DIV 19</div>
+		<div>DIV 20</div>
+		<div>DIV 21</div>
+		<div>DIV 22</div><div>DIV 23</div>
+		<div>DIV 24</div>
+		<div>DIV 25</div>
+		<div>DIV 26</div>
+		<div>DIV 27</div>
+		<div>DIV 28</div>
+		<div>DIV 29</div>
+	</section>
+</body>
+</html>
