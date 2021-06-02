@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Simple Selectors</title>
+	<style >
+		/* All h2 elements */
+		h2{
+			color: red;
+			text-align: center;
+		}
+		/* All with class="highlight" */
+		.highlight{
+			font-size: 20px;
+			font-weight: bold;
+			font-style: italic;
+			background-color: green;
+			opacity: .6;
+		}
+		/*element with id="mainpoint" */
+		#mainpoint{
+			font-size: 24px;
+			font-weight: bold;
+			background-color: red;
+			opacity: .7;
+		}
+		/*All p and h1 element*/
+		p, h1{
+			color: blue;
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Simple Selectors (h1)</h1>
+	<h2>Subheading 1(h2)</h2>
+	<p class="highlight">
+		The browser uses its selector API to traverse the DOM or Document Object Model, and pick out the elements matching the selector.
+	</p>
+	<p class="highlight">
+		Next is the class selector, and the class selector is specified with a dot and the name of the class. In this case again, we're creating a blue class, a blue CSS class, that will color whatever it targets with the color blue.
+	</p>
+	<h2>Subheading 2(h2)</h2>
+	<p>
+		The class selector does require a little bit of a change to your HTML document in that each element that you want that class applied to has to have a attribute class equal to the class name. So in this case we have a p, the paragraph tag and div tag both have the attribute class="blue" and therefore, their content or their text content will be colored blue. Notice that a different paragraph that is not marked with attribute class="blue" is completely unaffected by this. 
+	</p>
+	<div>
+		This is the main point of the entire article. So, attribute <span id="mainpoint">id="mainpoint".</span>
+	</div>
+</body>
+</html>
