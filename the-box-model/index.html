@@ -4,19 +4,23 @@
 	<meta charset="utf-8">
 	<title>The Box Model</title>
 	<style>
-		body{
+		*{
+			box-sizing: border-box;
 			margin: 0;
 			padding: 0;
-			background-color: #AAA
+		}
+		body{
+			background-color: #AAA;
 		}
 		#box{
 			background-color: blue;
 			padding: 10px;
-			border: 20px dashed black;
+			border: 5px dashed black;
 			margin: 40px;
 			width: 700px;
-			box-sizing: border-box;
 			margin-left: 300px;
+			height: 100px;
+			overflow: auto;
 		}
 		#content{
 			background-color: #90EE90
@@ -28,9 +32,9 @@
 			text-align: center;
 			padding: 5px;
 			width: 500px;
-			box-sizing: border-box;
 			border: 5px solid yellow;
 			margin-left: 400px;
+			margin-bottom: 50px;
 		}
 	</style>
 </head>
