@@ -1,3 +1,48 @@
+// console.log(document.getElementById("title"));
+
+// console.log(document instanceof HTMLDocument );
+
+document.addEventListener("DOMContentLoaded", 
+	 	function (event){
+	 		function sayHello(event) {
+	 			console.log(event);
+				this.textContent = "Said it!";
+				name = document.getElementById("name").value;
+				message = "<h2>Hello " + name + "!</h2>";
+
+				// document.getElementById("content").textContent = message;
+
+				if (name === "student"){
+				title = document.querySelector("#title").textContent;
+				title += " with input student";
+				document.querySelector("h1").textContent = title;
+				}	
+				document.getElementById("content").innerHTML = message;
+			}
+
+			// Unobstrusive Event binding
+			document.querySelector("button").addEventListener("click",sayHello);
+			document.querySelector("#name").addEventListener("blur",sayHello);
+			//Another way
+			// document.querySelector("button").onclick = sayHello;
+
+			document.querySelector("body").addEventListener("mousemove", 
+				function (event){
+						console.log("x: "+ event.clientX);
+						console.log("Y: "+ event.clientY);
+				}
+				);
+	 	}
+	);
+
+
+
+
+
+
+
+
+
 // var x="Hello World";
 // function orderChickenWith(sidedish="Whatever!") {
 // 	console.log("Chicken with "+sidedish);
@@ -182,8 +227,8 @@
 //*******************************************
 
 // //Shorthand Arrays
-let name = ["rachit","kumar","gupta"];
-console.log(name)
+// let name = ["rachit","kumar","gupta"];
+// console.log(name)
 // for(var i=0; i< name.length; i++){
 // 	console.log("Hello "+ name[i]);
 // }
